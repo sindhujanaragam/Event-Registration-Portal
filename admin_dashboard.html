@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2 style="text-align:center;">⚙️ Admin Dashboard</h2>
+
+<div class="container">
+    <h3>Add New Event ✨</h3>
+
+    <input id="ename" placeholder="Event Name">
+    <input id="date" placeholder="Date">
+    <input id="venue" placeholder="Venue">
+    <input id="desc" placeholder="Description">
+
+    <button onclick="addEvent()">Add Event</button>
+</div>
+
+<h3 style="text-align:center;">📋 Existing Events</h3>
+<h3 id="count"></h3>
+<div id="adminEvents"></div>
+<h3 style="text-align:center;">📊 Event Details</h3>
+<div id="eventDetails" class="container"></div>
+
+
+
+<script src="script.js"></script>
+
+<script>
+loadAdminEvents();
+getStudentCount();
+</script>
+
+</body>
+</html>
